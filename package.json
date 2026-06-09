@@ -1,0 +1,37 @@
+{
+  "name": "chain-lens",
+  "version": "1.0.0",
+  "description": "Bitcoin transaction and block analyzer CLI + web visualizer",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "cli": "ts-node src/cli.ts",
+    "web": "ts-node src/web/server.ts",
+    "test": "ts-node src/cli.ts fixtures/transactions/tx_legacy_p2pkh.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SummerOfBitcoin/2026-developer-challenge-1-chain-lens-btwshivam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SummerOfBitcoin/2026-developer-challenge-1-chain-lens-btwshivam/issues"
+  },
+  "homepage": "https://github.com/SummerOfBitcoin/2026-developer-challenge-1-chain-lens-btwshivam#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/multer": "^2.0.0",
+    "bech32": "^2.0.0",
+    "bs58check": "^4.0.0",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  }
+}
